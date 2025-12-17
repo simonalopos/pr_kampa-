@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="assets/logo-simple.svg">
+    <link rel="icon" type="image/png" href="assets/Logo_official.png">
+    <!-- Preload critical images for faster loading -->
+    <link rel="preload" as="image" href="assets/Logo_full.jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,7 +23,8 @@
     <nav class="navbar">
         <div class="logos-wrapper">
             <a href="#" class="logo-link">
-                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img" loading="lazy">
+                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img" width="225" height="135"
+                    fetchpriority="high">
             </a>
         </div>
         <ul class="nav-links">
@@ -95,7 +98,7 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <img src="assets/logo-simple.svg" alt="Icon" class="stat-icon">
+                        <img src="assets/Logo_official.png" alt="Icon" class="stat-icon" loading="lazy">
                         <h3>28+</h3>
                         <p>Episodes</p>
                     </div>
@@ -290,28 +293,32 @@
             </div>
             <div class="guests-grid">
                 <div class="guest-card">
-                    <img src="assets/nika.jpg" alt="Nika Vujisić" class="guest-img" loading="lazy">
+                    <img src="assets/nika.jpg" alt="Nika Vujisić" class="guest-img" loading="lazy" width="225"
+                        height="225">
                     <div class="guest-info">
                         <h3>Nika Vujisić</h3>
                         <p class="role">Podcaster</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/ema.jpg" alt="Ema Gurová" class="guest-img" loading="lazy">
+                    <img src="assets/ema.jpg" alt="Ema Gurová" class="guest-img" loading="lazy" width="224"
+                        height="224">
                     <div class="guest-info">
                         <h3>Ema Gurová</h3>
                         <p class="role">FMK Graduate & SMM</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/lukas.jpg" alt="Lukáš Bednár" class="guest-img" loading="lazy">
+                    <img src="assets/lukas.jpg" alt="Lukáš Bednár" class="guest-img" loading="lazy" width="225"
+                        height="225">
                     <div class="guest-info">
                         <h3>Lukáš Bednár</h3>
                         <p class="role">Marketing Expert</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/kristina.jpg" alt="Kristína Purdešová" class="guest-img" loading="lazy">
+                    <img src="assets/kristina.jpg" alt="Kristína Purdešová" class="guest-img" loading="lazy" width="200"
+                        height="200">
                     <div class="guest-info">
                         <h3>Kristína Purdešová</h3>
                         <p class="role">SMM & Content Creator</p>
@@ -378,7 +385,8 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img-footer" loading="lazy">
+                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img-footer" loading="lazy"
+                    width="225" height="135">
             </div>
             <div class="footer-links">
                 <a href="#">Instagram</a>
