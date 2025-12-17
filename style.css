@@ -2,7 +2,7 @@
     /* Unified Palette - Based on Logo Colors */
     --primary: #e6007e;
     /* Magenta from Logo_full.jpeg */
-    --secondary: #d4e000;
+    --secondary: #fae66e;
     /* Yellow from FMK insights_logo.jpeg */
     --tertiary: #ff6b00;
     /* Orange accent */
@@ -256,6 +256,11 @@ body {
     }
 }
 
+/* Mirror the left wave */
+.wave-lines.left-wave {
+    transform: scaleX(-1);
+}
+
 /* Remove Glitch Styles */
 .glitch-text::before,
 .glitch-text::after {
@@ -392,6 +397,8 @@ h2 {
 p {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.7;
 }
 
 a {
@@ -1022,6 +1029,8 @@ ul {
     font-weight: 300;
     margin-bottom: 2rem;
 }
+
+
 
 .about-stats {
     display: grid;
