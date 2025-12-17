@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="assets/Logo_official.png">
-    <!-- Preload critical images for faster loading -->
-    <link rel="preload" as="image" href="assets/Logo_full.jpeg">
+    <link rel="icon" type="image/svg+xml" href="assets/logo-simple.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,8 +21,7 @@
     <nav class="navbar">
         <div class="logos-wrapper">
             <a href="#" class="logo-link">
-                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img" width="225" height="135"
-                    fetchpriority="high">
+                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img" loading="lazy">
             </a>
         </div>
         <ul class="nav-links">
@@ -98,7 +95,7 @@
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <img src="assets/Logo_official.png" alt="Icon" class="stat-icon" loading="lazy">
+                        <img src="assets/logo-simple.svg" alt="Icon" class="stat-icon">
                         <h3>28+</h3>
                         <p>Episodes</p>
                     </div>
@@ -293,32 +290,28 @@
             </div>
             <div class="guests-grid">
                 <div class="guest-card">
-                    <img src="assets/nika.jpg" alt="Nika Vujisić" class="guest-img" loading="lazy" width="225"
-                        height="225">
+                    <img src="assets/nika.jpg" alt="Nika Vujisić" class="guest-img" loading="lazy">
                     <div class="guest-info">
                         <h3>Nika Vujisić</h3>
                         <p class="role">Podcaster</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/ema.jpg" alt="Ema Gurová" class="guest-img" loading="lazy" width="224"
-                        height="224">
+                    <img src="assets/ema.jpg" alt="Ema Gurová" class="guest-img" loading="lazy">
                     <div class="guest-info">
                         <h3>Ema Gurová</h3>
                         <p class="role">FMK Graduate & SMM</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/lukas.jpg" alt="Lukáš Bednár" class="guest-img" loading="lazy" width="225"
-                        height="225">
+                    <img src="assets/lukas.jpg" alt="Lukáš Bednár" class="guest-img" loading="lazy">
                     <div class="guest-info">
                         <h3>Lukáš Bednár</h3>
                         <p class="role">Marketing Expert</p>
                     </div>
                 </div>
                 <div class="guest-card">
-                    <img src="assets/kristina.jpg" alt="Kristína Purdešová" class="guest-img" loading="lazy" width="200"
-                        height="200">
+                    <img src="assets/kristina.jpg" alt="Kristína Purdešová" class="guest-img" loading="lazy">
                     <div class="guest-info">
                         <h3>Kristína Purdešová</h3>
                         <p class="role">SMM & Content Creator</p>
@@ -357,27 +350,114 @@
 
     <section id="register" class="section register">
         <div class="container">
-            <div class="register-content center">
-                <h2>Register Now</h2>
-                <p>Capacity is limited. Secure your spot today.</p>
-                <form class="register-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Name and Surname" required>
+            <!-- Eye-catching CTA Banner -->
+            <div class="register-cta-banner">
+                <div class="cta-sparkles">
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                    <span class="sparkle"></span>
+                </div>
+                <div class="cta-content">
+                    <div class="cta-badge">🔥 LIMITED SPOTS</div>
+                    <h2 class="cta-title">
+                        <span class="cta-word">REGISTER</span>
+                        <span class="cta-word accent">NOW</span>
+                    </h2>
+                    <p class="cta-subtitle">Don't miss the live podcast experience of the year!</p>
+                    <div class="cta-urgency">
+                        <span class="urgency-icon">⚡</span>
+                        <span>Seats filling up fast</span>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="School Email" required>
+                </div>
+            </div>
+
+            <div class="register-wrapper">
+                <div class="register-visual">
+                    <div class="register-icon-wrapper">
+                        <div class="register-pulse"></div>
+                        <div class="register-pulse delay-1"></div>
+                        <div class="register-pulse delay-2"></div>
+                        <div class="register-icon">🎟️</div>
                     </div>
-                    <div class="form-group">
-                        <select>
-                            <option value="" disabled selected>Year</option>
-                            <option value="1">1st Year</option>
-                            <option value="2">2nd Year</option>
-                            <option value="3">3rd Year</option>
-                            <option value="other">Other / Public</option>
-                        </select>
+                    <div class="register-features">
+                        <div class="register-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Free Entry</span>
+                        </div>
+                        <div class="register-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Live Podcast</span>
+                        </div>
+                        <div class="register-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Networking</span>
+                        </div>
+                        <div class="register-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Giveaways</span>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Submit Registration</button>
-                </form>
+                </div>
+                <div class="register-form-container">
+                    <div class="form-header">
+                        <h3>Reserve Your Spot</h3>
+                        <p>Fill in the form below to secure your seat</p>
+                    </div>
+                    <form class="register-form">
+                        <div class="form-section">
+                            <label class="form-label">Student of UCM FMK?</label>
+                            <div class="radio-group">
+                                <label class="radio-option">
+                                    <input type="radio" name="fmk-student" value="yes" required>
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">Yes</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="fmk-student" value="no">
+                                    <span class="radio-custom"></span>
+                                    <span class="radio-text">No</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="surname">Surname</label>
+                                <input type="text" id="surname" placeholder="Your surname" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="year">Year of Studies</label>
+                            <select id="year" required>
+                                <option value="" disabled selected>Select your year</option>
+                                <option value="1bc">1. Bc.</option>
+                                <option value="2bc">2. Bc.</option>
+                                <option value="3bc">3. Bc.</option>
+                                <option value="1mgr">1. Mgr.</option>
+                                <option value="2mgr">2. Mgr.</option>
+                                <option value="other">Other / Public</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="notes">What would you like to see at the event?</label>
+                            <textarea id="notes" placeholder="Share your ideas, topics you're interested in..."
+                                rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-mega-glow">
+                            <span class="btn-shine"></span>
+                            <span class="btn-text">🎟️ REGISTER NOW</span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -385,8 +465,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img-footer" loading="lazy"
-                    width="225" height="135">
+                <img src="assets/Logo_full.jpeg" alt="FMK Insightss Logo" class="logo-img-footer" loading="lazy">
             </div>
             <div class="footer-links">
                 <a href="#">Instagram</a>
